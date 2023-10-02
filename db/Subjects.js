@@ -1,5 +1,4 @@
-[
-    {
+[{
         "Id": "ADAV",
         "Name": "Lập trình Android nâng cao",
         "Logo": "ADAV.jpg"
