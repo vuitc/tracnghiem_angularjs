@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js" integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <title>Title</title>
+</head>
+
+<body ng-app="myApp">
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- them -->
+    <!-- <div class="container my-5" id="content">
+        <div class="row" ng-show="!inProgess">
+            <div class="col text-center">
+                <h2><i class="fas fa-clock" style="color: #23B5E1;"></i> 10:12:00</h2>
+            </div>
+        </div>
+        <div class="row" ng-show="inProgess">
+            <div class="col">
+                <div class="card border-info">
+                    <div class="card-header text-white" style="background-color: #23B5E1;">
+                        <img src="images/logos/JAAV.png" width="30" class="border border-primary rounded-lg" alt="">
+                        <span>Lập trình
+                            Java
+                            nâng
+                            cao</span>
+                        <span class="float-right badge badge-dark" style="padding: .28em .7em;">7/10</span>
+                    </div>
+                    <div class="card-body">
+
+                        <p class="card-text" style="font-weight: 500;">7. Java thú vị thế nào đối với bạn?
+                            <hr>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Radios" id="Radios1" value="option1">
+                                <label class="form-check-label" for="Radios1">
+                                    Không thú vị.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Radios" id="Radios2" value="option2">
+                                <label class="form-check-label" for="Radios2">
+                                    Có chút thú vị.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Radios" id="Radios3" value="option3">
+                                <label class="form-check-label" for="Radios3">
+                                    Thú vị.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Radios" id="Radios4" value="option4">
+                                <label class="form-check-label" for="Radios4">
+                                    Rất thú vị.
+                                </label>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        
+                        <span class="badge badge-success" style="padding: .28em .7em; font-size: 90%; font-weight: 500;">Điểm:
+                            6/10</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">First</a>
+                        </li>
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">Previous</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#">6</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">7</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Last</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div> -->
+    <quizfpoly></quizfpoly>
+    <!-- //code //footer -->
+    <footer class="bg-dark text-light p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Contact Us</h3>
+                    <address>
+                        123 Main Street<br>
+                        City, State 12345<br>
+                        Email: <a href="mailto:info@example.com">info@example.com</a><br>
+                        Phone: (123) 456-7890
+                    </address>
+                </div>
+                <div class="col-md-4">
+                    <h3>Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Follow Us</h3>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+    <script>
+        var app = angular.module('myApp', []);
+        app.directive('quizfpoly', function(quizFactory) {
+            return {
+                restrict: 'AE',
+                scope: {},
+                templateUrl: 'template-quiz.html',
+                link: function(scope, elem, attrs) {
+                    scope.start = function() {
+                        scope.id = 0;
+                        scope.inProgess = true;
+                        scope.getQuestion();
+                        scope.count = quizFactory.getCount();
+                        scope.quizOver = false; // chưa hoan thanh hết các câu hỏi
+                    }
+
+                    scope.reset = function() {
+                        scope.inProgess = false;
+                        scope.score = 0;
+                        scope.quizOver = false; // Đặt lại để cho biết trò chơi chưa kết thúc
+                    }
+                    scope.getQuestion = function() {
+                            var quiz = quizFactory.getQuestions(scope.id);
+                            if (quiz) {
+                                scope.question = quiz.Text;
+                                scope.options = quiz.Answers;
+                                scope.answer = quiz.AnswerId;
+                                scope.answerMode = true;
+                            } else {
+                                scope.quizOver = true;
+                            }
+                        }
+                        // scope.playAgain = function() {
+                        //     scope.inProgess = false;
+                        //     scope.quizOver = false;
+                        //     scope.score = 0;
+                        //     scope.id = 0;
+                        //     scope.getQuestion();
+                        // };
+                    scope.checkAnswer = function() {
+                        if (!$('input[name=answer]:checked').length) return;
+                        var ans = $('input[name=answer]:checked').val(); // Sử dụng .val() để lấy giá trị đã chọn
+                        if (ans == scope.answer) {
+                            // alert("Đúng");
+                            scope.score++;
+                            scope.correct = true;
+                        } else {
+                            // alert("Sai");
+                            scope.correct = false;
+                        }
+                        scope.answerMode = false;
+                    }
+                    scope.nextQuestion = function() {
+                        scope.id++;
+                        scope.getQuestion();
+                    }
+                    scope.reset();
+                }
+            }
+
+        });
+        app.factory('quizFactory', function($http) {
+            var question = []; // Khởi tạo mảng questions để lưu trữ câu hỏi
+
+            // Sử dụng $http để tải dữ liệu từ tệp 'ADAV.js'
+            $http.get('../db/Quizs/ADAV.js').then(function(res) {
+                question = res.data;
+                // Đảm bảo rằng câu hỏi đã được tải thành công
+                // alert(question.length);
+            });
+
+            return {
+                getQuestions: function(id) {
+                    var randomItem = question[Math.floor(Math.random() * question.length)];
+                    var count = question.length;
+                    if (count > 2) {
+                        count = 2;
+                    };
+                    if (id < count) {
+                        return randomItem;
+                    } else {
+                        return false;
+                    }
+                    // return question[id];
+                },
+                getCount: function() {
+                    return question.length > 10 ? 10 : question.length;
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
